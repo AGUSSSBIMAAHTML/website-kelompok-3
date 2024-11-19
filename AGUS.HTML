@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tim Arsitektur - Abdul, Gio, Benaya, Frans</title>
+    <style>
+        /* Reset default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #34495e;
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+
+        section {
+            padding: 50px 20px;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+        }
+
+        .profile-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .profile-card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            text-align: center;
+            padding: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .profile-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .profile-card img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        .profile-card h3 {
+            font-size: 1.8em;
+            margin: 10px 0;
+        }
+
+        .profile-card p {
+            font-size: 1em;
+            color: #7f8c8d;
+        }
+
+        .profile-card .skills {
+            margin-top: 15px;
+            font-size: 0.9em;
+            color: #16a085;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 1em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            background-color: #34495e;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1em;
+        }
+
+        .contact-form button:hover {
+            background-color: #2c3e50;
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #34495e;
+            color: white;
+            border-radius: 50%;
+            padding: 15px;
+            font-size: 1.5em;
+            cursor: pointer;
+            display: none;
+        }
+
+        .back-to-top:hover {
+            background-color: #2c3e50;
+        }
+
+        footer {
+            background-color: #34495e;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+        }
+
+        /* Responsiveness */
+        @media (max-width: 768px) {
+            .profile-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .contact-form {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Tim Arsitektur</h1>
+    <p>Abdul, Gio, Benaya, dan Frans</p>
+</header>
+
+<section id="profiles">
+    <h2>Profil Anggota Tim</h2>
+    <div class="profile-container">
+        <!-- Abdul -->
+        <div class="profile-card">
+            <img src="teroris.JPG" alt="Abdul">
+            <h3>Abdul</h3>
+            <p><strong>Keahlian:</strong> Desain Arsitektur Kota</p>
+            <p><strong>Pendidikan:</strong> S1 Arsitektur, Universitas Indonesia</p>
+            <p class="skills"><strong>Skill:</strong> Perencanaan Kota, Desain Ruang Publik</p>
+        </div>
+        <!-- Gio -->
+        <div class="profile-card">
+            <img src="gio2.jpg" alt="Gio">
+            <h3>Gio</h3>
+            <p><strong>Keahlian:</strong> Desain Interior</p>
+            <p><strong>Pendidikan:</strong> S2 Arsitektur Interior, Universitas Gadjah Mada</p>
+            <p class="skills"><strong>Skill:</strong> Desain Interior Ramah Lingkungan</p>
+        </div>
+        <!-- Benaya -->
+        <div class="profile-card">
+            <img src="BENAYA.JPG" alt="Benaya">
+            <h3>Benaya</h3>
+            <p><strong>Keahlian:</strong> Arsitektur Lanskap</p>
+            <p><strong>Pendidikan:</strong> S1 Arsitektur Lanskap, Institut Teknologi Bandung</p>
+            <p class="skills"><strong>Skill:</strong> Desain Lanskap Berkelanjutan</p>
+        </div>
+        <!-- Frans -->
+        <div class="profile-card">
+            <img src="frans.jpg" alt="Frans">
+            <h3>Frans</h3>
+            <p><strong>Keahlian:</strong> Arsitektur Modern</p>
+            <p><strong>Pendidikan:</strong> S1 Arsitektur, Universitas Negeri Jakarta</p>
+            <p class="skills"><strong>Skill:</strong> Desain Bangunan Modern dan Struktur</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Hubungi Kami</h2>
+    <form class="contact-form" id="contact-form">
+        <input type="text" id="name" placeholder="Nama" required>
+        <input type="email" id="email" placeholder="Email" required>
+        <textarea id="message" placeholder="Pesan Anda..." required></textarea>
+        <button type="submit">Kirim Pesan</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2024 Tim Arsitektur - Abdul, Gio, Benaya, Frans</p>
+</footer>
+
+<div class="back-to-top" id="back-to-top">&#8593;</div>
+
+<script>
+    // Back to top functionality
+    const backToTopButton = document.getElementById('back-to-top');
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 200) {
+            backToTopButton.style.display = 'block';
+        } else {
+            backToTopButton.style.display = 'none';
+        }
+    });
+
+    backToTopButton.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Form submission
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        alert('Pesan berhasil dikirim!');
+        this.reset();
+    });
+</script>
+
+</body>
+</html>
+
